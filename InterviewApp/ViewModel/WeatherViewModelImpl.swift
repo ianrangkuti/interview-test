@@ -38,6 +38,5 @@ final class WeatherViewModelImpl: WeatherViewModel {
         self.showError.accept("Something error, please try again")
         self.isLoading.accept(false)
       })
-      .disposed(by: disposeBag)
   }
 }
