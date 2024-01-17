@@ -30,6 +30,15 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 
+.Podfile.swp
+Pods/
+Podfile.lock
+
+mudah.xcodeproj/xcuserdata/
+
+.DS_Store
+
+
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
