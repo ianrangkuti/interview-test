@@ -33,7 +33,6 @@ class WeatherServiceImpl: WeatherService {
             completion(false, nil)
           } else {
             let currentWeather = try? JSONDecoder().decode(Weather.self, from: data)
-            completion(true, currentWeather)
           }
         } else {
           completion(false, nil)
