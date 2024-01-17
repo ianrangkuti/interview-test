@@ -17,12 +17,4 @@ struct CurrentWeather: Codable {
   let weatherDescriptions: [String]?
   let windSpeed: Int?
   let humidity: Int?
-  
-  enum CodingKeys: String, CodingKey {
-    case temperature = "temperature"
-    case weatherIcons = "weather_icons"
-    case weatherDescriptions = "weather_descriptions"
-    case windSpeed = "wind_speed"
-    case humidity = "humidity"
-  }
 }
