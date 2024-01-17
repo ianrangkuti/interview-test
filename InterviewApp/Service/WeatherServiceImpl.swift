@@ -28,9 +28,15 @@ class WeatherServiceImpl: WeatherService {
           return
         }
         
-        if let data = data,
-           let currentWeather = try? JSONDecoder().decode(Weather.self, from: data) {
-          completion(true, currentWeather)
+        if let data = data, let json = try? JSON.init(data: data, options: .fragmentsAllowed) {
+          if json["success"] == false {
+            completion(false, nil)
+          } else {
+            let currentWeather = try? JSONDecoder().decode(Weather.self, from: data)
+            completion(true, currentWeather)
+          }
+        } else {
+          completion(false, nil)
         }
       })
       task.resume()
