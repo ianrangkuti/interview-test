@@ -10,7 +10,6 @@ import RxSwift
 import RxCocoa
 
 protocol WeatherViewModel {
-  var searchText: BehaviorRelay<String> { get }
   var showSuccess: PublishRelay<CurrentWeather> { get }
   var showError: PublishRelay<String> { get }
   var isLoading: PublishRelay<Bool> { get }

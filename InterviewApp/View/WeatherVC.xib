@@ -18,7 +18,6 @@
                 <outlet property="searchBar" destination="G5Q-pC-cY7" id="Ssg-Sx-q5Y"/>
                 <outlet property="temperatureLabel" destination="djS-dw-wwN" id="Eml-QF-VFA"/>
                 <outlet property="temperatureValueLabel" destination="drV-Ku-TSn" id="Mcw-xg-omE"/>
-                <outlet property="view" destination="iN0-l3-epB" id="41L-sj-t43"/>
                 <outlet property="weatherIcon" destination="H6c-m8-rfJ" id="q9a-c2-bSf"/>
                 <outlet property="windSpeedLabel" destination="5Io-zZ-v86" id="G2B-HG-0CO"/>
                 <outlet property="windSpeedValueLabel" destination="fM9-Dv-Stz" id="rQs-BI-wxu"/>

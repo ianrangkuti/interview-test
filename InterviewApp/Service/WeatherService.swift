@@ -6,5 +6,5 @@
 //
 
 protocol WeatherService {
-  func getCurrentWeather(location: String, completion: @escaping ((_ isSuccess: Bool, _ result: Weather?) -> Void))
+  func getCurrentWeather(location: String, completion: @escaping ((_ result: Weather?) -> Void))
 }

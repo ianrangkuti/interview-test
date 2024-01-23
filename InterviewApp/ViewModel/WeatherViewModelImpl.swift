@@ -33,12 +33,10 @@ final class WeatherViewModelImpl: WeatherViewModel {
     self.isLoading.accept(true)
     self.weatherRepository.getCurrentWeather(location: self.searchText.value)
       .subscribe(onNext: { currentWeather in
-        self.showSuccess.accept(currentWeather)
         self.isLoading.accept(false)
       }, onError: { _ in
         self.showError.accept("Something error, please try again")
         self.isLoading.accept(false)
       })
-      .disposed(by: disposeBag)
   }
 }
